@@ -1,67 +1,201 @@
-*{
-    width: 100%;
-    
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 10px;
-    
 }
 body{
-    box-sizing: border-box;
+    width: 100%;
 }
 
 
-
-header{
+header {
     display: flex;
+    
     justify-content: space-around;
-    align-items: center;
-    background-color: rgb(20, 13, 13);
-    
+    align-items: start;
+    background-color: rgba(227, 131, 131, 0.548);
+    padding: 0;
+    height:150px;
 }
-
-h1{
-    color: antiquewhite;
-    font-weight:bold;
-    font-family: cursive;
-}
-nav ul{
-    display: flex;   
-    justify-content: end;
+.cool-ti h3{
+    margin-top: 10%;
+    margin-bottom: 0;
+    background-color: aqua;
+    width: 100%;
 
 }
 
-.work-container{
-    width: 90%;
-    border-left: 3px solid rebeccapurple;
-    margin: 3% 8%;
-   ;
-}
-.work{
-    width: 5%;
-    border-right: 3px solid blueviolet;
-    height: 500%;
-}
-.work-subcontainer{
-    border: 2px solid lightgreen;
-    width: 88%;
-    margin-left: 10%;
-    margin-top: -2%;
-}
-.work-box1{
-    width: 95%;
-    border: 1px dashed lightskyblue;
-    background-image: url();
-    margin-right: 0%;
-}
-.work-box1 .sub-section{
-    border: 1px double burlywood;
-    width: 20%;
 
-}
-.mini-box{
-    width: 50%;
-    border: solid black;
-    margin: 5%;
+.about-div{
+    display: flex;
+    width: 75%;;
    
+    padding: 10px;
+    margin: 2% 10% 1% 15%;
+}
+#content-about{
+    display: flex;
+    flex-wrap: wrap; 
+    width: 84%;
+    margin: 1%;
+    margin-left: 0%;
+    border-left: 2px solid palevioletred;
+    padding: 10px;
+}
+#about-aside{
+    padding: 3px;
+    margin-top: 15px;
+}
+h1 a{
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: start;
+    margin-left: 0;
     
+}
+.header-div{
+    display: flex;
+    margin-top: 10px;
+    margin-left: 2px;
+    
+
+}
+ .profile-img {
+    flex-wrap: wrap;
+    flex-direction: column;
+    border-radius: 50%;
+    width: 150px;
+   
+
+    
+  
+   
+}
+.hero-image{
+    flex-wrap: wrap;
+    width: 100%;
+    height: 300px;
+}
+
+nav{
+   margin-right: ; 
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    padding:20px;
+    
+    
+}
+ul{
+    width: 100%;
+    background-color: aliceblue;
+    margin-right: 0; /*has no effect-why? */
+
+}
+li {
+    flex-wrap: wrap;
+    flex-direction: row;
+    font-size: medium;
+    font-weight: bold;
+    padding: 5px;
+    
+
+}
+
+
+
+
+
+
+
+.work-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin-left: 15%;
+    margin-right: 10%;
+    margin-bottom: 20%;
+    height: 600px;
+}
+
+.work-aside {
+    height: 100%;
+    border-right: 3px solid red;
+    padding: 10px;
+    margin-top: 2px;
+}
+
+
+
+
+.content-boxes{
+    display: flex;
+    flex-wrap: wrap; 
+    width: 84%;
+    margin-left: 4px;
+}
+.mini-box1{
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 98%; 
+    border: solid rgb(149, 7, 7);
+    padding: 20px;
+    margin: 1px;
+    background-image: url('/assets/images/keyb-image.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: auto;
+
+}
+h4{
+    font-family: monospace;
+    background-color: aqua;
+    text-align: left;
+}
+
+.mini-box2, .mini-box3, .mini-box4, .mini-box5{
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 49%; 
+    border: solid rgb(149, 7, 7);
+    padding: 40px;
+    margin: 1px;
+    background-image: url('/assets/images/wave-image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+}
+
+
+footer {
+    background-color: lightgrey;
+    padding:20px;
+    text-align: center;
+    width: auto;
+   
+}
+
+footer h3 {
+    margin-bottom: 10px;
+}
+
+footer nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer nav a {
+    color: black;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 20px;
+}
+
+footer nav a:hover {
+    text-decoration: underline;
 }
