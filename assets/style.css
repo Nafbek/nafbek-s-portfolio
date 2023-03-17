@@ -1,3 +1,9 @@
+/*Declaring a variable to set a common background color */
+:root {
+    --back-color: aqua;
+}
+
+/*A universal selector to affect many element */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,317 +11,248 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: black;
 }
-body{
+/* To set a body element as general flex container*/
+body {
     display: flex;
     flex-direction: column;
 }
-
+/* To set the header section */
 header {
     width: 100%;
     display: flex;
-    justify-content: space-around;
-    align-items: start;
+    justify-content: space-between;
     background-color: gray;
-    padding: 0;
 }
-
-.header-div{
+/* To set the first section of the header */
+.logo {
+    display: flex;
     flex-wrap: wrap;
-    width: 30%;
-    margin: 1% 25% 1% 0;
-    
+    justify-content: flex-start;
+    width: 25%;
+    align-items: start;
+    margin-left: 3%;
 }
-
+/* To set the clickable heading/name fo the logo */
+#name-logo> a >h1 {
+    flex-wrap: wrap;
+    text-decoration: none;
+    margin-bottom: 2%;
+    font: normal bold cursive;
+    background-color: var(--back-color);
+    }
+/* To set the clickable picture logo  */
 #profile-pic {
-    border: outset purple;
+    border: var(--back-color);
     border-radius: 50%;
-    width: 100px;  
-    margin-left: 10%;
+    width: 50px;
+    margin-left: 30%;
     margin-bottom: 2%;
 }
-.logo{
+/* To set the navigation bar */
+
+.top-links {
     display: flex;
-    
+    width: 40%;
+    margin-right: 10px;
+    align-items: center;
 }
-
-
-h1 a{
-    flex-wrap: wrap;
-    flex-direction: column;
-    font: normal bolder cursive;
-    text-decoration: none;
-    background-color:rgb(221, 238, 244);
-    padding: 1%;    
-}
-
-
-.top-links{
-
-    width: 50%;
-    margin: 1% 1% 2% 20%; /*why 0 doesn't affect its left margin*/
-    margin-top: 1%;
-
-}
-
+/* To set the child of the navigation bar */
 .top-links ul {
     display: flex;
-    flex-wrap: wrap;
+    width: 100%;
+    padding: 30px;
+    justify-content: space-around;
     list-style: none;
-    justify-content: start;
-    padding:20px;
-    
-    
-    
 }
-
-ul li a{
-    flex-direction: column;
+/* To set the links in the navigation bar */
+li a {
+    color: rgb(59, 239, 239);
+    line-height: 1.5;
     font-weight: bold;
-    color: aqua; /* why does not have effect*/
-    padding: 7px;
-    text-align: justify;
 }
-.hero-image{
+/* To set the hero-image*/
+.hero-image {
     display: flex;
     justify-content: end;
-    
     background: rgba(26, 24, 24, 0.548) url('/assets/images/hero-i.jpg') no-repeat center;
-    background-size:cover;
-    
+    background-size: cover;
     align-items: flex-end;
-    
+    height: 300px;
 }
-
-#sub-title { 
-    
-    flex: wrap;
-    flex-direction: row;
-
-    
-    background-color: aqua;
+/* To set sub-title on the hero-image */
+#sub-title {
+    background-color: var(--back-color);
     width: 25%;
-    padding: 10px;
+    padding: 15px;
     margin-bottom: 10px;
     margin-right: 20px;
-    
     font-style: oblique;
     font-weight: bold;
-
-
 }
-
-
-
-
-.about-div{
+/* To set the container for the 'About Me' section */
+.aboutMe-container {
     display: flex;
-    flex-wrap: wrap; 
-    width: 85%;
-    height: 300px; 
-    margin: 2% 10% 1%;
-    border-style: dotted;
+    flex-wrap: wrap;
+    min-height: 200px;
+    width: 84%;
+    margin: 1%;
+    margin-left: 10%;
 }
-
-
-#about-head {
- 
- 
-border-style: dotted;
-    
-    height: 65%;
+/* To set the heading sub-section for the 'About Me' section */
+#aboutMe-head {
     border-right: 3px solid rgb(42, 35, 35);
     padding: 10px;
     margin-top: 2px;
-    padding-left: 1px;
-    margin-right: 2px;
+    padding-left: 0;
     font-weight: bolder;
     font-size: 32px;
     text-align: end;
     flex-basis: 0;
-
-   
-
+    height: auto;
+    margin-left: 1%; 
 }
-
-#content-about{
+/* To set the second content sub-sectioncontainer for the 'About Me' section */
+#content-aboutMe {
     display: flex;
-    flex-wrap: wrap; 
-    width: 85%;
-    margin: 1%;
+    flex-wrap: wrap;
+    width: 80%;
     margin-left: 0;
-    margin-top: 0;
-    
-    height: 65%;
-    
-    padding: 10px;
-    border: solid;
 }
- #about-head h3 {
+/* To set the heading text in the heading sub-section of the 'About Me' section */
+#aboutMe-head h3 {
     font-weight: bolder;
-    font-size: 32px; 
+    font-size: 32px;
 }
-
-#content-about p{
+/* To set the paragraph in the content sub-section of the 'About Me' section */
+#content-aboutMe p {
     text-align: justify;
     line-height: 1.5;
-    padding-bottom: 0;
-   
-    
-
+    padding: 7px;
 }
-
- 
-
-.hero-image{  /*check tomorrow*/
-    flex-wrap: wrap;
-    width: 100%;
-    height: 300px;
-}
-
-
-
-
-
-
-
-
-.work-container {
+/* To set the container for the 'Work' section */
+#work-container {
     display: flex;
     flex-wrap: wrap;
     width: 85%;
-    padding: 10px;
     margin: 2% 10%;
-    margin-bottom: 20%;
     height: 600px;
-    border-style: dotted;   
 }
-
+/* To set the heading sub-section for the 'Work' section */
 #work-aside {
-    
     height: 100%;
     border-right: 3px solid rgb(42, 35, 35);
     padding: 10px;
     margin-top: 2px;
-    padding-left: 0;
+    padding-left: 6px;
     font-weight: bolder;
     font-size: 32px;
     text-align: end;
 }
-
-
-
-
-.content-boxes{
+/* To set the second content sub-section in the 'Work' section */
+.content-boxes {
     display: flex;
-    flex-wrap: wrap; 
-    width: 84%;
-    margin-left: 4px;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: end;
 }
-.mini-box1{
+/* To set the longest box inside the content sub-section of the 'Work' section */
+.box1 {
     flex-wrap: wrap;
     flex-direction: column;
-    width: 98%; 
-    border: solid rgb(149, 7, 7);
+    width: 98%;
+    border: solid 5px rgb(149, 7, 7);
     padding: 20px;
     margin: 1px;
-    background-image: url('/assets/images/keyb-image.jpg');
+    margin-left: 0;
+    background-image: url('https://i.pinimg.com/736x/54/6c/86/546c8672e07278fa7f831cb7aed563fd.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
     height: auto;
-
 }
-h4{
+/* To set the heading text in the 'Work' section */
+h4 {
     font-family: monospace;
-    background-color: aqua;
-    text-align: left;
+    font-size: medium;
 }
-
-.mini-box2, .mini-box3, .mini-box4, .mini-box5{
+/* To set the major for boxes in the content sub-section of the 'Work' section */
+.box2,
+.box3,
+.box4,
+.box5 {
     flex-wrap: wrap;
     flex-direction: column;
-    width: 49%; 
+    width: 49%;
     border: solid rgb(149, 7, 7);
+    border-width: 3px;
     padding: 40px;
     margin: 1px;
-    background-image: url('/assets/images/wave-image.jpg');
+    background-image: url('https://images.unsplash.com/photo-1594729095022-e2f6d2eece9c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGNvbXB1dGVyJTIwc2NpZW5jZXxlbnwwfHwwfHw%3D&w=1000&q=80');
     background-size: cover;
     background-repeat: no-repeat;
     height: auto;
 }
+/* To set the mini-box1 inside the longest box of the content sub-section of the 'Work' section */
+.sub-box1 {
 
-
-.footer-container{
+    width: 15%;
+    margin-top: 10%;
+    background-color: var(--back-color);
+    text-align: left;
+    line-height: 1.5;
+}
+/* To set the mini-boxes inside the four boxes of the content sub-section of the 'Work' section */
+.mini-box {
+    width: 20%;
+    margin-top: 10%;
+    background-color: var(--back-color);
+    text-align: left;
+    line-height: 1.5;
+    font-size: small;
+}
+/* To set the footer container */
+#footer-container {
     display: flex;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     width: 85%;
     padding: 10px;
-    margin: 2% 10%;
-    
-    border-style: dotted;
+    margin-left: 8%;
 }
-.footer-subdiv1{
-    border-style: dotted;
-    height: 100%;
+/* To set the first section inside the footer container */
+.footer-subdiv1 {
     border-right: 3px solid rgb(42, 35, 35);
     padding: 10px;
     margin-top: 2px;
+    margin-bottom: 10px;
     padding-left: 0;
+    flex-basis: 0;
+}
+/* To set the heading of the footer container */
+.footer-subdiv1 h3 {
     font-weight: bolder;
     font-size: 32px;
     text-align: end;
-    flex-basis: 0%;
-    
 }
-.footer-subdiv2{
-    display: flex;
-    flex-wrap: wrap; 
-    width: 84%;
-    margin-left: 4px;
-    border: solid;
-    justify-content: start;
-    align-items: center;
-}
-footer h3 {
-    margin-bottom: 10px;
-    font-weight: bolder;
-    font-size: 32px;
-}
-
-footer nav {
+/* To set the second section inside the footer container */
+.footer-subdiv2 {
     display: flex;
     flex-wrap: wrap;
-    
+    width: 81%;
+    margin-left: 4px;
+    align-items: center;
 }
-
+/* To set the links inside the footer container */
 footer nav a {
     color: black;
-    margin: 0 10px;
-    padding: 20px;
+    padding-left: 40px;
 }
-
-footer nav a:hover {
-    text-decoration: underline;
-}
-a:hover{
+/* To set all links with the pseudo-class */
+a:hover {
     background-color: rgb(251, 251, 191);
     color: rgb(96, 59, 209);
 }
-@media screen and (max-width: 768px) {
-    .header-div>.top-links
-    
-}
-@media screen and (max-width: 768px) {
-    p{
-   flex-flow: column wrap; /*??????????*/
-
+/* To set the flex-direction of the navigation links in the header with the pseudo-class */
+@media screen and (max-width:760px) {
+    .top-links ul {
+        flex-direction: column;
     }
-    
-}
-@media screen and (max-width: 768px) {
-  p{
-    font-size: small;
-   flex: 0 5 0; /*how can i get p wrapped within in its parental width?????*/
-
-    }
-    
 }

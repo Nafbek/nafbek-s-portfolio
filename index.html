@@ -1,111 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Nafbek's Portfolio</title>
     <link rel="stylesheet" href="./assets/style.css">
     <link rel="icon" href="/assets/images/favicon.ico">
 </head>
+<!-- The main body -->
+
 <body>
-    <header>             
-        <div class="header-div">
-            
-            
-            <div class="logo">
-                <span>Nafbek</span>
-               
-                <a href="#"><div class="profile-img">
-                <img id="profile-pic" src="/assets/images/keyb-image.jpg" alt="This is a Nafbek'S profile picture"> </div></a><span>Kebede</span> 
-           
+    <header>
+        <!-- The logo section of the header -->
+        <div class="logo">
+            <img id="profile-pic" src="/assets/images/profile-pic.jpg" alt="This is a Nafbek'S profile picture">
+            <div id="name-logo">
+                <a href="#" title="Go to Nafbek's home">
+                    <h1>Nafbek Kebede</h1>
+                </a>
             </div>
            
         </div>
+        <!-- This is the nav section of the header  -->
         <nav class="top-links">
             <ul>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">Work</a></li>
-                <li><a href="#">Contact Me</a></li>
-                <li><a href="#">Resume</a></li>
-            </ul>
-                  
-        </nav>            
+                <li><a href="#about-head">About Me</a></li>
+                <li><a href="#work-container">Work</a></li>
+                <li><a href="#footer-container">Contact Me</a></li>
+                <li><a id="myresume" href="#">Resume</a></li>
+            </ul>  
+        </nav>
     </header>
-
+    <!-- Hero-image with a text on it -->
     <div class="hero-image">
         <section id="sub-title">
-            <p >Solving problems at grassroot!</p>
+            <p>Solving problems at grassroot!</p>
         </section>
-        
     </div>
-    
-    <div class="about-div">
-        <div id="about-head">
-            <h3 >About Me </h3> 
+<!-- Container for 'About Me' section-->
+    <div class="aboutMe-container">
+<!-- The heading sub-section of the 'About Me' container -->
+        <div id="aboutMe-head">
+            <h3>About Me </h3>
         </div>
-        
-        <div id="content-about">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim ullam, 
-                deleniti sapiente quasi id totam, nisi quia blanditiis, 
-                adipisci dolorum corporis amet repellendus officia saepe dicta. 
-                Quas tempora necessitatibus minus!
+<!-- The content sub-section of the 'About Me' container -->
+        <div id="content-aboutMe">
+            <p>  I am <strong>Nafbek Kebede</strong>, a current fullstack web development student at University of Minnesota Bootcamp. Prior to the Web development course, I gained <em>extensive experience</em>  in business and project management.
             </p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                    Numquam soluta fugiat commodi doloribus neque deserunt 
-                    delectus tenetur quas esse totam, 
-                    quos nihil odio ad suscipit! Repellendus voluptates iure eius deleniti!
+            <p>I am a highly motivated individual who is passionate about making a  significant impact in the field of software engineering. <em>My ultimate goal</em>  is to become a skilled software engineer.
+
+            Currently, I have a profound understanding of HTML and CSS. I have also just started learning JavaScript. For further details regarding my background and experience, please refer to my attached <a href="#myresume">resume</a>.
             </p>
         </div>
-        
     </div>
-
-
-
-
-
-
-    <div class="work-container">
-        <div>
-            <aside id="work-aside">
-                <h3 >Work</h3>
-            </aside> 
+    <!-- The second container for the 'Work' section -->
+    <div id="work-container">
+        <!-- The heading sub-section of the 'Work' container -->
+        <div id="work-aside">
+            <h3>Work</h3>
         </div>
-       
-           
-            <div class="content-boxes">
-                <section class="mini-box1"> <h4>CSS</h4> </section>
-                <section class="mini-box2"><h4>HTML</h4></section>
-                <section class="mini-box3"><h4>Java</h4></section>
-                <section class="mini-box4"><h4>Basic computer skills</h4></section>
-                <section class="mini-box5"><h4>other</h4></section>
-            </div>
-      
+        <!-- The content section of the 'Work' container -->
+        <div class="content-boxes">
+            <!-- The longer box in the content section of the 'Work' container-->
+            <a class="box1" href="#">
+                <section>
+                    <div class="sub-box1">
+                        <h4> Basic computer skills</h4>
+                        <p>Course Challenge</p>
+                    </div>
+                </section>
+            </a>
+            <!-- Box2 in the content section of the 'Work' container-->
+            <a class="box2" href="#">
+                <section>
+                    <div class="mini-box">
+
+                        <h4>HTML</h4>
+                        <p>......</p>
+                    </div>
+                </section>
+            </a>
+            <!-- Box3 in the content section of the 'Work' container-->
+            <a class="box3" href="#"><img src="" alt="">
+                <section>
+                    <div class="mini-box">
+                        <h4>CSS</h4>
+                        <p>.....</p>
+                    </div>
+                </section>
+            </a>
+            <!-- Box4 in the content section of the 'Work' container-->
+            <a class="box4" href="#">
+                <section>
+                    <div class="mini-box">
+                        <h4>Java</h4>
+                        <p>.....</p>
+                    </div>
+                </section>
+            </a>
+            <!-- Box5 in the content section of the 'Work' container-->
+            <a class="box5" href="#">
+                <section>
+                    <div class="mini-box">
+                        <h4>other</h4>
+                        <p>Math...</p>
+                    </div>
+                </section>
+            </a>
+        </div>
     </div>
-
-    
-    
-
-   
-
-    <footer>
-        <div class="footer-container">
+<!-- The footer container-->
+    <footer id="footer-container">
+        <!-- The heading section of the footer container -->
             <div class="footer-subdiv1">
                 <h3>Contact Me</h3>
             </div>
+            <!-- The content section of the footer container -->
             <div class="footer-subdiv2">
                 <nav class="bottom-links">
-                    <a href="#">612,,,,,,</a>
-                    <a href="#">email@gmail.com</a>
-                    <a href="#">GitHub</a>
+                    <a href="#">+1 612-472-8840</a>
+                    <a href="mailto:nabekg@gmail.com">nabekg@gmail.com</a>
+                    <a href="https://github.com/Nafbek">GitHub</a>
                     <a href="#">Twitter</a>
                     <a href="#">Spotify</a>
-                </nav> 
+                </nav>
             </div>
         </div>
     </footer>
-
-    
 </body>
 </html>
 
