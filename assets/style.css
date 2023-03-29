@@ -12,14 +12,16 @@
     color: black;
 }
 /* To set a body element as general flex container*/
-body {
+/* body {
     display: flex;
     flex-direction: column;
-}
+} */
+
 /* To set the header section */
 header {
-    width: 100%;
+    box-sizing: border-box;
     display: flex;
+    
     justify-content: space-between;
     background-color: gray;
 }
@@ -31,14 +33,16 @@ header {
     width: 25%;
     align-items: start;
     margin-left: 3%;
+    margin-top: 1%;
 }
 /* To set the clickable heading/name fo the logo */
 #name-logo> a >h1 {
-    flex-wrap: wrap;
-    text-decoration: none;
+    /* flex-wrap: wrap; */
     margin-bottom: 2%;
     font: normal bold cursive;
     background-color: var(--back-color);
+    width: fit-content;
+  
     }
 /* To set the clickable picture logo  */
 #profile-pic {
@@ -50,31 +54,38 @@ header {
 }
 /* To set the navigation bar */
 
-.top-links {
+.top-links ul{
     display: flex;
-    width: 40%;
-    margin-right: 10px;
-    align-items: center;
+    flex-wrap: wrap;
+    
+    
+   width: fit-content;
+    margin-top: 10%;
+    margin-right: 5%;
+ 
+   
+    border: solid;
+    list-style: none;  
 }
-/* To set the child of the navigation bar */
-.top-links ul {
-    display: flex;
-    width: 100%;
-    padding: 30px;
-    justify-content: space-around;
-    list-style: none;
-}
-/* To set the links in the navigation bar */
-li a {
+li>a{
+    
+    padding: 0 10%;
     color: rgb(59, 239, 239);
     line-height: 1.5;
     font-weight: bold;
+   
 }
+/* To set the links in the navigation bar */
+ /* a {
+
+  
+   
+} */
 /* To set the hero-image*/
 .hero-image {
     display: flex;
     justify-content: end;
-    background: rgba(26, 24, 24, 0.548) url('/assets/images/hero-i.jpg') no-repeat center;
+    background: rgba(26, 24, 24, 0.548) url('./images/hero-i.jpg') no-repeat center;
     background-size: cover;
     align-items: flex-end;
     height: 300px;
@@ -82,7 +93,7 @@ li a {
 /* To set sub-title on the hero-image */
 #sub-title {
     background-color: var(--back-color);
-    width: 25%;
+    width: fit-content;
     padding: 15px;
     margin-bottom: 10px;
     margin-right: 20px;
@@ -103,31 +114,30 @@ li a {
     border-right: 3px solid rgb(42, 35, 35);
     padding: 10px;
     margin-top: 2px;
+    margin-bottom: 10px;
+    margin-left: 1%;
     padding-left: 0;
-    font-weight: bolder;
-    font-size: 32px;
-    text-align: end;
     flex-basis: 0;
-    height: auto;
-    margin-left: 1%; 
+    text-align: end;
 }
 /* To set the second content sub-sectioncontainer for the 'About Me' section */
 #content-aboutMe {
     display: flex;
     flex-wrap: wrap;
-    width: 80%;
+    width: 79%;
     margin-left: 0;
+    
 }
 /* To set the heading text in the heading sub-section of the 'About Me' section */
 #aboutMe-head h3 {
     font-weight: bolder;
-    font-size: 32px;
+    font-size: 2em;
 }
 /* To set the paragraph in the content sub-section of the 'About Me' section */
 #content-aboutMe p {
     text-align: justify;
     line-height: 1.5;
-    padding: 7px;
+    padding: 7px 15px;
 }
 /* To set the container for the 'Work' section */
 #work-container {
@@ -135,17 +145,18 @@ li a {
     flex-wrap: wrap;
     width: 85%;
     margin: 2% 10%;
-    height: 600px;
+    height: 100%;
+    
 }
 /* To set the heading sub-section for the 'Work' section */
 #work-aside {
-    height: 100%;
+    height: auto;
     border-right: 3px solid rgb(42, 35, 35);
     padding: 10px;
     margin-top: 2px;
     padding-left: 6px;
     font-weight: bolder;
-    font-size: 32px;
+    font-size: 2em;
     text-align: end;
 }
 /* To set the second content sub-section in the 'Work' section */
@@ -165,7 +176,7 @@ li a {
     margin: 1px;
     margin-left: 0;
     background-image: url('https://i.pinimg.com/736x/54/6c/86/546c8672e07278fa7f831cb7aed563fd.jpg');
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     height: auto;
 }
@@ -175,10 +186,7 @@ h4 {
     font-size: medium;
 }
 /* To set the major for boxes in the content sub-section of the 'Work' section */
-.box2,
-.box3,
-.box4,
-.box5 {
+.subBox-other {
     flex-wrap: wrap;
     flex-direction: column;
     width: 49%;
@@ -186,11 +194,35 @@ h4 {
     border-width: 3px;
     padding: 40px;
     margin: 1px;
+    
+
+}
+
+#box2{
+    position: relative;
     background-image: url('https://images.unsplash.com/photo-1594729095022-e2f6d2eece9c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGNvbXB1dGVyJTIwc2NpZW5jZXxlbnwwfHwwfHw%3D&w=1000&q=80');
     background-size: cover;
     background-repeat: no-repeat;
     height: auto;
+    
+    
 }
+
+#box3{
+    background-image: url('https://pixabay.com/photos/computer-computer-code-programming-1873831/');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+}
+
+.box4{
+    background-image: url('https://pixabay.com/illustrations/e-mail-computer-internet-human-65927/');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+}
+
+
 /* To set the mini-box1 inside the longest box of the content sub-section of the 'Work' section */
 .sub-box1 {
 
@@ -236,6 +268,7 @@ h4 {
 .footer-subdiv2 {
     display: flex;
     flex-wrap: wrap;
+    
     width: 81%;
     margin-left: 4px;
     align-items: center;
@@ -249,10 +282,17 @@ footer nav a {
 a:hover {
     background-color: rgb(251, 251, 191);
     color: rgb(96, 59, 209);
+
 }
 /* To set the flex-direction of the navigation links in the header with the pseudo-class */
-@media screen and (max-width:760px) {
-    .top-links ul {
-        flex-direction: column;
+@media screen and (max-width:375px) {
+    header {
+        flex-direction: row;
     }
+   
+    .top-links {
+       flex: 2 0 50%;
+       margin-left: 25%;
+    }
+    
 }
