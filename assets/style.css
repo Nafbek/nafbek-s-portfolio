@@ -1,6 +1,7 @@
 /*Declaring a variable to set a common background color */
 :root {
     --back-color: aqua;
+    --font-size: 1.5rem;
 }
 
 /*A universal selector to affect many element */
@@ -21,7 +22,8 @@
 header {
     box-sizing: border-box;
     display: flex;
-    
+    flex-wrap: wrap;
+    align-items: center;
     justify-content: space-between;
     background-color: gray;
 }
@@ -29,49 +31,53 @@ header {
 .logo {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
-    width: 25%;
-    align-items: start;
-    margin-left: 3%;
+    flex-direction: column;
+    justify-content: center;            
+    min-width: 30rem;
+    align-items: center;
+    margin-left: 2%;
     margin-top: 1%;
 }
 /* To set the clickable heading/name fo the logo */
 #name-logo> a >h1 {
-    /* flex-wrap: wrap; */
+   
     margin-bottom: 2%;
     font: normal bold cursive;
     background-color: var(--back-color);
-    width: fit-content;
+    /* width: fit-content; */
   
     }
 /* To set the clickable picture logo  */
 #profile-pic {
     border: var(--back-color);
     border-radius: 50%;
-    width: 50px;
-    margin-left: 30%;
-    margin-bottom: 2%;
+    width: 5%;
+    margin-bottom: 1%;
 }
-/* To set the navigation bar */
 
+/* To set the navigation bar */
+.top-links{
+    display: flex;
+}
 .top-links ul{
     display: flex;
-    flex-wrap: wrap;
+  
     
-    
-   width: fit-content;
+    gap: 1rem;
+   width: 100%;
     margin-top: 10%;
     margin-right: 5%;
  
    
-    border: solid;
+ 
+
     list-style: none;  
 }
 li>a{
     
-    padding: 0 10%;
+    
     color: rgb(59, 239, 239);
-    line-height: 1.5;
+   
     font-weight: bold;
    
 }
@@ -209,14 +215,21 @@ h4 {
 }
 
 #box3{
-    background-image: url('https://pixabay.com/photos/computer-computer-code-programming-1873831/');
+    background-image: url('https://cdn.pixabay.com/photo/2016/11/30/20/44/computer-1873831_1280.png');
     background-size: cover;
     background-repeat: no-repeat;
     height: auto;
 }
 
-.box4{
-    background-image: url('https://pixabay.com/illustrations/e-mail-computer-internet-human-65927/');
+#box4{
+    background-image: url('https://cdn.pixabay.com/photo/2012/11/13/17/44/e-mail-65927_1280.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+}
+
+#box5{
+    background-image: url('https://cdn.pixabay.com/photo/2016/10/15/09/28/fractal-1742109_1280.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     height: auto;
@@ -285,14 +298,20 @@ a:hover {
 
 }
 /* To set the flex-direction of the navigation links in the header with the pseudo-class */
-@media screen and (max-width:375px) {
+@media screen and (max-width:768px) {
     header {
-        flex-direction: row;
+     justify-content: ;
+       
     }
    
-    .top-links {
-       flex: 2 0 50%;
-       margin-left: 25%;
-    }
+   
+    /* .top-links ul li{
+        
+        margin-top: 2rem;
+        flex-direction: column;
+
+    } */
+   
+   
     
 }
