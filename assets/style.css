@@ -2,84 +2,85 @@
 :root {
     --back-color: aqua;
     --font-size: 1.5rem;
-  }
+}
 
-  /*A universal selector to affect many element */
-  * {
+/*A universal selector to affect many element */
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: black;
-  }
-  
-  /* To set the header section */
-  header {
+}
+
+/* To set the header section */
+header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: gray;
-  }
-  
-  /* To set the first section of the header */
-  .logo {
+}
+
+/* To set the first section of the header */
+.logo {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     max-width: 15rem;
     margin-left: 2%;
     margin-top: 1%;
-  }
-  
-  /* To set the clickable heading/name fo the logo */
-  #name-logo>a>h1 {
+}
+
+/* To set the clickable heading/name fo the logo */
+#name-logo>a>h1 {
     margin-bottom: 2%;
     font-family: 'Times New Roman', Times, serif;
     background-color: var(--back-color);
     width: max-content;
-  }
-  
-  /* To set the clickable picture logo  */
-  #profile-pic {
+}
+
+/* To set the clickable picture logo  */
+#profile-pic {
     border: var(--back-color);
     border-radius: 50%;
     width: 10%;
     margin-bottom: 1%;
     margin-left: 15%;
-  }
-  
-  /* To set the navigation bar */
-  .top-links {
+}
+
+/* To set the navigation bar */
+.top-links {
     display: flex;
     margin-right: 2%;
-  }
-  .top-links ul {
+}
+
+.top-links ul {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
     width: 100%;
     margin-right: 7%;
     list-style: none;
-  }
+}
 
-  /* To set the links in the navigation bar */
-  li>a {
+/* To set the links in the navigation bar */
+li>a {
     color: rgb(59, 239, 239);
     font-weight: bold;
-  }
+}
 
-  /* To set the hero-image*/
-  .hero-image {
+/* To set the hero-image*/
+.hero-image {
     display: flex;
     justify-content: end;
     background: rgba(26, 24, 24, 0.548) url('./images/hero-i.jpg') no-repeat center;
     background-size: cover;
     align-items: flex-end;
     height: 300px;
-  }
-  
-  /* To set sub-title on the hero-image */
-  #sub-title {
+}
+
+/* To set sub-title on the hero-image */
+#sub-title {
     background-color: var(--back-color);
     width: fit-content;
     padding: 15px;
@@ -87,20 +88,20 @@
     margin-right: 20px;
     font-style: oblique;
     font-weight: bold;
-  }
-  
-  /* To set the container for the 'About Me' section */
-  #aboutMe-container {
+}
+
+/* To set the container for the 'About Me' section */
+#aboutMe-container {
     display: flex;
     flex-wrap: wrap;
     min-height: 200px;
     width: 84%;
     margin: 1%;
     margin-left: 10%;
-  }
-  
-  /* To set the heading sub-section for the 'About Me' section */
-  #aboutMe-head {
+}
+
+/* To set the heading sub-section for the 'About Me' section */
+#aboutMe-head {
     border-right: 3px solid rgb(42, 35, 35);
     padding: 10px;
     margin-top: 2px;
@@ -109,40 +110,40 @@
     padding-left: 0;
     flex-basis: 0;
     text-align: end;
-  }
-  
-  /* To set the second content sub-sectioncontainer for the 'About Me' section */
-  #content-aboutMe {
+}
+
+/* To set the second content sub-sectioncontainer for the 'About Me' section */
+#content-aboutMe {
     display: flex;
     flex-wrap: wrap;
     width: 79%;
     margin-left: 0;
-  }
-  
-  /* To set the heading text in the heading sub-section of the 'About Me' section */
-  #aboutMe-head h3 {
+}
+
+/* To set the heading text in the heading sub-section of the 'About Me' section */
+#aboutMe-head h3 {
     font-weight: bolder;
     font-size: 2em;
-  }
-  
-  /* To set the paragraph in the content sub-section of the 'About Me' section */
-  #content-aboutMe p {
+}
+
+/* To set the paragraph in the content sub-section of the 'About Me' section */
+#content-aboutMe p {
     text-align: justify;
     line-height: 1.5;
     padding: 7px 15px;
-  }
-  
-  /* To set the container for the 'Work' section */
-  #work-container {
+}
+
+/* To set the container for the 'Work' section */
+#work-container {
     display: flex;
     flex-wrap: wrap;
     width: 85%;
     margin: 2% 10%;
     height: 100%;
-  }
-  
-  /* To set the heading sub-section for the 'Work' section */
-  #work-aside {
+}
+
+/* To set the heading sub-section for the 'Work' section */
+#work-aside {
     height: auto;
     border-right: 3px solid rgb(42, 35, 35);
     padding: 10px;
@@ -151,18 +152,18 @@
     font-weight: bolder;
     font-size: 2em;
     text-align: end;
-  }
-  
-  /* To set the second content sub-section in the 'Work' section */
-  .content-boxes {
+}
+
+/* To set the second content sub-section in the 'Work' section */
+.content-boxes {
     display: flex;
     flex-wrap: wrap;
     width: 80%;
     justify-content: end;
-  }
-  
-  /* To set the longest box inside the content sub-section of the 'Work' section */
-  .box1 {
+}
+
+/* To set the longest box inside the content sub-section of the 'Work' section */
+.box1 {
     flex-wrap: wrap;
     flex-direction: column;
     width: 98%;
@@ -174,16 +175,16 @@
     background-size: cover;
     background-repeat: no-repeat;
     height: auto;
-  }
-  
-  /* To set the heading text in the 'Work' section */
-  h4 {
+}
+
+/* To set the heading text in the 'Work' section */
+h4 {
     font-family: monospace;
     font-size: medium;
-  }
-  
-  /* To set the major for boxes in the content sub-section of the 'Work' section */
-  .subBox-other {
+}
+
+/* To set the major for boxes in the content sub-section of the 'Work' section */
+.subBox-other {
     flex-wrap: wrap;
     flex-direction: column;
     width: 49%;
@@ -191,54 +192,58 @@
     border-width: 3px;
     padding: 40px;
     margin: 1px;
-  }
-  /* Set the application placeholder */
-  #box2 {
+}
+
+/* Set the application placeholder */
+#box2 {
     position: relative;
     background-image: url('https://images.unsplash.com/photo-1594729095022-e2f6d2eece9c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGNvbXB1dGVyJTIwc2NpZW5jZXxlbnwwfHwwfHw%3D&w=1000&q=80');
     background-size: cover;
     background-repeat: no-repeat;
     height: auto;
-  }
-  #box3 {
+}
+
+#box3 {
     background-image: url('https://cdn.pixabay.com/photo/2016/11/30/20/44/computer-1873831_1280.png');
     background-size: cover;
     background-repeat: no-repeat;
     height: auto;
-  }
-  #box4 {
+}
+
+#box4 {
     background-image: url('https://cdn.pixabay.com/photo/2012/11/13/17/44/e-mail-65927_1280.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     height: auto;
-  }
-  #box5 {
+}
+
+#box5 {
     background-image: url('https://cdn.pixabay.com/photo/2016/10/15/09/28/fractal-1742109_1280.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     height: auto;
-  }
-  
-  /* To set the mini-box1 inside the longest box of the content sub-section of the 'Work' section */
-  .sub-box1 {
+}
+
+/* To set the mini-box1 inside the longest box of the content sub-section of the 'Work' section */
+.sub-box1 {
     width: fit-content;
     margin-top: 10%;
     background-color: var(--back-color);
     text-align: left;
     line-height: 1.5;
-  }
-  
-  /* To set the mini-boxes inside the four boxes of the content sub-section of the 'Work' section */
-  .mini-box {
+}
+
+/* To set the mini-boxes inside the four boxes of the content sub-section of the 'Work' section */
+.mini-box {
     width: fit-content;
     margin-top: 10%;
     background-color: var(--back-color);
     text-align: left;
     line-height: 1.5;
     font-size: small;
-  }
-  
-  /* To set the footer container */
+}
+
+/* To set the footer container */
 #footer-container {
     display: flex;
     flex-wrap: wrap;
@@ -246,6 +251,7 @@
     padding: 10px;
     margin-left: 8%;
 }
+
 /* To set the first section inside the footer container */
 .footer-subdiv1 {
     border-right: 3px solid rgb(42, 35, 35);
@@ -255,12 +261,14 @@
     padding-left: 0;
     flex-basis: 0;
 }
+
 /* To set the heading of the footer container */
 .footer-subdiv1 h3 {
     font-weight: bolder;
     font-size: 32px;
     text-align: end;
 }
+
 /* To set the second section inside the footer container */
 .footer-subdiv2 {
     display: flex;
@@ -268,29 +276,34 @@
     margin-left: 4px;
     align-items: center;
 }
+
 /* To set the links inside the footer container */
 footer nav a {
     color: black;
     padding-left: 40px;
 }
-  
-  /* To set all links with the pseudo-class */
-  a:hover {
+
+/* To set all links with the pseudo-class */
+a:hover {
     background-color: rgb(251, 251, 191);
     color: rgb(96, 59, 209);
-  }
-  
-  /* To set the flex-direction of the navigation links in the header with the pseudo-class */
-  @media screen and (max-width:580px) {
-    header,  .top-links ul li{
+}
+
+/* To set the flex-direction of the navigation links in the header with the pseudo-class */
+@media screen and (max-width:580px) {
+
+    header,
+    .top-links ul li {
         flex-direction: column;
     }
+
     .logo {
         margin-bottom: 0;
-        font-size: small; 
+        font-size: small;
     }
+
     #profile-pic {
         width: 15%;
         margin-left: 0;
     }
-  }
+}
