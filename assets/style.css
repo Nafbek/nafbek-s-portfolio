@@ -197,7 +197,7 @@ h4 {
 /* Set the application placeholder */
 #box2 {
     position: relative;
-    background-image: url('./images/weather-app.jpg');
+    background-image: url('./images/weather-app-pr.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     height: auto;
