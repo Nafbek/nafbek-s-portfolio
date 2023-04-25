@@ -171,7 +171,7 @@ li>a {
     padding: 20px;
     margin: 1px;
     margin-left: 0;
-    background-image: url('/assets/images/bg-app-project1.png');
+    background-image: url('./images/bg-app-project1.png');
     background-size: cover;
     background-repeat: no-repeat;
     height: auto;
@@ -197,7 +197,7 @@ h4 {
 /* Set the application placeholder */
 #box2 {
     position: relative;
-    background-image: url('./images/bg-app-project1.png');
+    background-image: url('./images/weather-app.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     height: auto;
