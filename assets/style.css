@@ -171,7 +171,7 @@ li>a {
     padding: 20px;
     margin: 1px;
     margin-left: 0;
-    background-image: url('https://i.pinimg.com/736x/54/6c/86/546c8672e07278fa7f831cb7aed563fd.jpg');
+    background-image: url('/assets/images/bg-app-project1.png');
     background-size: cover;
     background-repeat: no-repeat;
     height: auto;
@@ -191,13 +191,13 @@ h4 {
     border: solid rgb(149, 7, 7);
     border-width: 3px;
     padding: 40px;
-    margin: 1px;
+    margin-top: 1px;
 }
 
 /* Set the application placeholder */
 #box2 {
     position: relative;
-    background-image: url('https://images.unsplash.com/photo-1594729095022-e2f6d2eece9c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGNvbXB1dGVyJTIwc2NpZW5jZXxlbnwwfHwwfHw%3D&w=1000&q=80');
+    background-image: url('/assets/images/weather-app.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     height: auto;
